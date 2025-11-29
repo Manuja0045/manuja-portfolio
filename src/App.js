@@ -157,7 +157,7 @@ export default function Portfolio() {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-64 h-64 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 p-1 shadow-2xl">
               <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center overflow-hidden">
-               <img src="manuja.png" alt="Manuja Nagvekar" className="w-full h-full object-cover" />
+               <img src={process.env.PUBLIC_URL + '/manuja.png'} alt="Manuja Nagvekar" className="w-full h-full object-cover" />
               </div>
             </div>
 
@@ -315,7 +315,7 @@ export default function Portfolio() {
       <footer className="py-8 px-4 bg-slate-900">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-400">
-            © 2024 Manuja Nagvekar. All rights reserved.
+            © {new Date().getFullYear()} Manuja Nagvekar. All rights reserved.
           </p>
         </div>
       </footer>
